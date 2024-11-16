@@ -44,7 +44,7 @@ url('data:image/jpg;base64,{encoded_banner}');
 
 st.markdown("""
     <div class="container-fluid py-5">
-        <div class="container col-8">
+        <div class="container">
             <p class="p-organik">
                 Sampah anorganik adalah jenis sampah yang berasal dari bahan non-biologis atau hasil olahan bahan sintetik tertentu. Materialnya tidak berasal dari alam, sehingga tidak mudah terurai secara alami (undegradable) dan membutuhkan waktu yang sangat lama untuk terdekomposisi di lingkungan. Sampah ini umumnya dihasilkan dari aktivitas manusia, terutama dari penggunaan bahan sintetis atau produk olahan.
             </p>
