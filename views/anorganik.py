@@ -159,7 +159,7 @@ with open("images/reuse.jpg", "rb") as image_file:
 st.markdown(f"""
     <div class="container-fluid konten">
         <h2 class="text-center project pt-5 mb-5">Cara Mengolah Sampah Anorganik</h2>
-        <div class="container pb-5 col-lg-8">
+        <div class="container pb-5">
                 <div class="col-lg-12">
                     <div class="card mb-5 equal-card shadow">
                         <div class="text-center mt-3">
