@@ -137,7 +137,7 @@ st.markdown(f"""
                         <div class="card-body">
                             <h5 class="card-title text-center">Limbah Cair</h5>
                             <p>
-                                Sampah padat adalah limbah berbentuk lunak sampai keras yang bisa berasal dari bahan organik maupun anorganik. Contohnya meliputi plastik, sayur-sayuran, sisa makanan, dan sebagainya. Meski demikian, tidak semua sampah padat dapat terurai secara alami.
+                                Limbah cair merupakan sisa cairan tertentu yang sudah tidak diperlukan lagi. Contohnya yaitu air dari cucian, kamar mandi, cairan kimia, medis, dan lain-lain. Oleh karena itu, limbah cair biasanya memerlukan tempat khusus untuk pengolahannya.
                             </p>
                         </div>
                     </div>
@@ -150,7 +150,7 @@ st.markdown(f"""
                         <div class="card-body">
                             <h5 class="card-title text-center">Limbah Padat</h5>
                             <p>
-                                Limbah cair merupakan sisa cairan tertentu yang sudah tidak diperlukan lagi. Contohnya yaitu air dari cucian, kamar mandi, cairan kimia dari industri, medis, dan lain-lain. Oleh karena itu, limbah cair biasanya memerlukan tempat khusus untuk pengolahannya.
+                                Sampah padat adalah limbah berbentuk lunak sampai keras yang bisa berasal dari bahan organik maupun anorganik. Contohnya meliputi plastik, sayur-sayuran, sisa makanan, dan sebagainya. Meski demikian, tidak semua sampah padat dapat terurai secara alami.
                             </p>
                         </div>
                     </div>
