@@ -44,7 +44,7 @@ url('data:image/jpg;base64,{encoded_banner}');
 
 st.markdown("""
     <div class="container-fluid py-5">
-        <div class="container col-8">
+        <div class="container">
             <p class="p-organik">
                 Sampah Organik adalah sampah yang dapat terurai secara alamiah di alam. Sampah Organik biasanya berasal 
                 dari sisa sisa mahkluk hidup, seperti hewan, tanaman, maupun manusia. Sampah organik juga bisa disebut 
