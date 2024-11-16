@@ -58,7 +58,7 @@ def preprocess_image(image):
     # Mengonversi gambar ke format RGB
     image = image.convert("RGB")
     # Mengubah gambar ke ukuran (200, 200)
-    image = ImageOps.fit(image, (200, 200), Image.ANTIALIAS)
+    image = ImageOps.fit(image, (200, 200), method=Image.Resampling.LANCZOS)
     # Mengubah gambar ke numpy array dan rescale ke rentang 0-1
     img_array = np.array(image) / 255.0
     # Menambahkan dimensi agar sesuai dengan input model
