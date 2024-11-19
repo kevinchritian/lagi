@@ -5,42 +5,46 @@ import streamlit as st
 home = st.Page(
     page = "views/home.py",
     title='Home',
+    icon=":material/home:",
     default= True
 )
 
 about = st.Page(
     page = "views/about.py",
+    icon=":material/groups_2:",
     title='Tentang Kami',
 )
 
 sampah = st.Page(
     page = "views/sampah.py",
+    icon=":material/delete_forever:",
     title='Sampah',
 )
 
 sampah_organik = st.Page(
     page = "views/organik.py",
+    icon=":material/compost:",
     title='Sampah Organik',
 )
 
 sampah_anorganik = st.Page(
     page = "views/anorganik.py",
+    icon=":material/water_bottle_large:",
     title='Sampah Anorganik',
 )
 
 AI = st.Page(
     page = "views/AI.py",
+    icon=":material/smart_toy:",
     title = "AI",
 )
 
 pg = st.navigation(
-    pages= [home, about, sampah, sampah_organik, sampah_anorganik, AI]
+    {
+    "info" : [home,about],
+    "projects" :[sampah, sampah_organik, sampah_anorganik, AI],
+    }
 )
-
-# {
-#     "info" : [home],
-#     "projects" :[about],
-#     }
 
 
 

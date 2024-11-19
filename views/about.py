@@ -150,14 +150,17 @@ st.markdown(f"""
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="card mb-3 tujuan-card">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 col-4 d-flex align-items-center justify-content-center">
+                    <div class="card mb-5 tujuan-card">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-4 d-md-flex align-items-center justify-content-center d-none d-md-block">
                                 <img src="data:image/jpeg;base64,{image_base72}" class="img-fluid rounded-start card-img">
                             </div>
-                            <div class="col-8 col-md-8 d-flex align-items-center">
+                            <div class="col-12 col-md-8 d-flex align-items-center">
                                 <div class="card-body text-center">
                                     <h5 class="card-title title-txt">Memfasilitasi Pemilahan Sampah yang Akurat</h5>
+                                    <div class="gambar-tujuan d-flex justify-content-center d-md-none d-block">
+                                        <img src="data:image/jpeg;base64,{image_base72}" class="img-fluid rounded-start card-img">
+                                    </div>
                                     <p class="card-text tujuan-txt">Menyediakan teknologi yang mampu mengidentifikasi dan membedakan sampah organik dan anorganik secara tepat, membantu pengguna dalam memahami dan mempraktikkan pemilahan sampah berdasarkan jenisnya.</p>
                                 </div>
                             </div>
@@ -165,29 +168,17 @@ st.markdown(f"""
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="card mb-3">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 col-4 d-flex align-items-center justify-content-center">
-                                <img src="data:image/jpeg;base64,{image_base71}" class="img-fluid rounded-start card-img">
-                            </div>
-                            <div class="col-8 col-md-8 d-flex align-items-center">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title title-txt">Meningkatkan Kesadaran Masyarakat</h5>
-                                    <p class="card-text tujuan-txt">Mengajak masyarakat untuk ikut serta dalam pengelolaan sampah dengan pemilahan yang benar, memperkuat kesadaran akan dampak lingkungan dari pemilahan sampah organik dan anorganik.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card mb-3">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 col-4 d-flex align-items-center justify-content-center">
+                    <div class="card mb-5 tujuan-card">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-4 d-md-flex align-items-center justify-content-center d-none d-md-block">
                                 <img src="data:image/jpeg;base64,{image_base69}" class="img-fluid rounded-start card-img">
                             </div>
-                            <div class="col-8 col-md-8 d-flex align-items-center">
+                            <div class="col-12 col-md-8 d-flex align-items-center">
                                 <div class="card-body text-center">
                                     <h5 class="card-title title-txt">Meningkatkan Daur Ulang Optimal</h5>
+                                    <div class="gambar-tujuan d-flex justify-content-center d-md-none d-block">
+                                        <img src="data:image/jpeg;base64,{image_base69}" class="img-fluid rounded-start card-img">
+                                    </div>
                                     <p class="card-text tujuan-txt">Meningkatkan peluang daur ulang sampah anorganik melalui pemilahan yang tepat, sehingga lebih banyak material yang dapat dimanfaatkan kembali, dan sampah organik dapat dikelola secara ramah lingkungan.</p>
                                 </div>
                             </div>
@@ -195,14 +186,35 @@ st.markdown(f"""
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="card mb-3">
-                        <div class="row g-0 h-100">
-                            <div class="col-md-4 col-4 d-flex align-items-center justify-content-center">
+                    <div class="card mb-5 tujuan-card">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-4 d-md-flex align-items-center justify-content-center d-none d-md-block">
+                                <img src="data:image/jpeg;base64,{image_base71}" class="img-fluid rounded-start card-img">
+                            </div>
+                            <div class="col-12 col-md-8 d-flex align-items-center">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title title-txt">Meningkatkan Kesadaran Masyarakat</h5>
+                                    <div class="gambar-tujuan d-flex justify-content-center d-md-none d-block">
+                                        <img src="data:image/jpeg;base64,{image_base71}" class="img-fluid rounded-start card-img">
+                                    </div>
+                                    <p class="card-text tujuan-txt">Mengajak masyarakat untuk ikut serta dalam pengelolaan sampah dengan pemilahan yang benar, memperkuat kesadaran akan dampak lingkungan dari pemilahan sampah organik dan anorganik.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card mb-5 tujuan-card">
+                        <div class="row g-0">
+                            <div class="col-md-4 col-4 d-md-flex align-items-center justify-content-center d-none d-md-block">
                                 <img src="data:image/jpeg;base64,{image_base70}" class="img-fluid rounded-start card-img">
                             </div>
-                            <div class="col-8 col-md-8 d-flex align-items-center">
+                            <div class="col-12 col-md-8 d-flex align-items-center">
                                 <div class="card-body text-center">
                                     <h5 class="card-title title-txt">Mengurangi Dampak Lingkungan</h5>
+                                    <div class="gambar-tujuan d-flex justify-content-center d-md-none d-block">
+                                        <img src="data:image/jpeg;base64,{image_base70}" class="img-fluid rounded-start card-img">
+                                    </div>
                                     <p class="card-text tujuan-txt">NatureAIClassify bertujuan untuk mengurangi dampak negatif sampah terhadap lingkungan, khususnya dengan edukasi tentang pentingnya pemilahan sampah organik dan anorganik.</p>
                                 </div>
                             </div>

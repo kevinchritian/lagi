@@ -160,7 +160,7 @@ st.markdown(f"""
     <div class="container-fluid konten">
         <h2 class="text-center project pt-5 mb-5">Cara Mengolah Sampah Anorganik</h2>
         <div class="container pb-5">
-                <div class="col-lg-12">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="card mb-5 equal-card shadow">
                         <div class="text-center mt-3">
                             <img src="data:image/jpeg;base64,{encoded_organik1}" class="mengelola">
@@ -171,7 +171,7 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="card mb-5 equal-card shadow">
                         <div class="text-center mt-3">
                             <img src="data:image/jpeg;base64,{encoded_organik2}" class="mengelola">

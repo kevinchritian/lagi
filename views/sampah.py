@@ -46,7 +46,7 @@ url('data:image/jpg;base64,{encoded_banner}');
 
 st.markdown("""
     <div class="container-fluid pt-5">
-        <div class="container col-8">
+        <div class="container col-lg-8">
                 <div class="">
                     <p class="pengetian-sampah">
                     	Menurut UU Nomor 8 Tahun 2008 tentang Pengelolaan Sampah, sampah adalah sisa kegiatan sehari-hari manusia atau proses 
@@ -248,7 +248,7 @@ with open("images/dampak.jpg", "rb") as image_file:
 st.markdown(f"""
     <div class="container-fluid">
     <h2 class="py-5 text-center">Dampak Negatif Sampah</h2>
-    <div class="container col-8">
+    <div class="container col-lg-8">
             <div>
                 <div class="image-wrapper mb-5">
                     <img src="data:image/jpeg;base64,{encoded_alam}" class="contoh">

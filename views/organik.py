@@ -44,7 +44,7 @@ url('data:image/jpg;base64,{encoded_banner}');
 
 st.markdown("""
     <div class="container-fluid py-5">
-        <div class="container">
+        <div class="container col-lg-8">
             <p class="p-organik">
                 Sampah Organik adalah sampah yang dapat terurai secara alamiah di alam. Sampah Organik biasanya berasal 
                 dari sisa sisa mahkluk hidup, seperti hewan, tanaman, maupun manusia. Sampah organik juga bisa disebut 
@@ -176,7 +176,7 @@ st.markdown(f"""
     <div class="container-fluid konten">
         <h2 class="text-center project pt-5 mb-5">Cara Mengolah Sampah Organik</h2>
         <div class="container pb-5 col-lg-8">
-                <div class="col-lg-12">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="card mb-5 equal-card shadow">
                         <div class="text-center mt-3">
                             <img src="data:image/jpeg;base64,{encoded_organik2}" class="mengelola">
@@ -187,7 +187,7 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="card mb-5 equal-card shadow">
                         <div class="text-center mt-3">
                             <img src="data:image/jpeg;base64,{encoded_organik3}" class="mengelola">
@@ -198,7 +198,7 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="card mb-5 equal-card shadow">
                         <div class="text-center mt-3">
                             <img src="data:image/jpeg;base64,{encoded_organik1}" class="mengelola">
@@ -209,7 +209,7 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="card mb-5 equal-card shadow">
                         <div class="text-center mt-3">
                             <img src="data:image/jpeg;base64,{encoded_organik4}" class="mengelola">
