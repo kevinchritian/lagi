@@ -41,8 +41,8 @@ AI = st.Page(
 
 pg = st.navigation(
     {
-    "info" : [home,about],
-    "projects" :[sampah, sampah_organik, sampah_anorganik, AI],
+    "Info" : [home,about],
+    "Projects" :[sampah, sampah_organik, sampah_anorganik, AI],
     }
 )
 
