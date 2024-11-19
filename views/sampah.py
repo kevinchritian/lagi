@@ -46,7 +46,7 @@ url('data:image/jpg;base64,{encoded_banner}');
 
 st.markdown("""
     <div class="container-fluid pt-5">
-        <div class="container col-lg-8">
+        <div class="container col-lg-9">
                 <div class="">
                     <p class="pengetian-sampah">
                     	Menurut UU Nomor 8 Tahun 2008 tentang Pengelolaan Sampah, sampah adalah sisa kegiatan sehari-hari manusia atau proses 
@@ -77,7 +77,7 @@ st.markdown(f"""
         <div class="container col-10">
             <h2 class="text-center">Klasifikasi Jenis Sampah</h2>
             <p class="text-center mb-5">Sampah dapat dibedakan menjadi beberapa jenis yaitu berdasarkan sifat, wujudnya, dan sumbernya.</p>
-            <h3 class="text-center">Berdasarkan Sifat</h3>
+            <h3 class="text-center mb-3">Berdasarkan Sifat</h3>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-5 shadow">
@@ -127,7 +127,7 @@ with open("images/limbah-padat.jpg", "rb") as image_file:
 st.markdown(f"""
     <div class="container-fluid pt-5">
         <div class="container col-lg-8">
-            <h3 class="text-center">Berdasarkan Wujud</h3>
+            <h3 class="text-center mb-3">Berdasarkan Wujud</h3>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="card mb-5 shadow">
@@ -182,20 +182,22 @@ st.markdown(
     <div class="container-fluid">
         <div class="container">
             <div class="text-center">
-                <h3 class="mt-5">
+                <h3 class="mt-5 mb-3">
                     Berdasarkan Sumbernya
                 </h3>
             </div>
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="text-center gambar">
+                    <div class="gambar text-center d-flex justify-content-center align-items-center">
                         <img src="data:image/jpeg;base64,{encoded_alam}" class="contoh">
                     </div>
-                    <div class="text-center class="fw-bold"">
+                    <div class="text-center">
                         <h5 class="fw-bold">Sampah Alam</h5>
-                        <p>
-                            Sumber sampah dihasilkan dari alami lingkungan. Contohnya berupa daun daunan yang gugur, ranting yang patah, buah yang jatuh ke pohon.
-                        </p>
+                        <div>
+                            <p class="col-lg-8 offset-lg-2">
+                                Sumber sampah dihasilkan dari alami lingkungan. Contohnya berupa daun daunan yang gugur, ranting yang patah, buah yang jatuh ke pohon.
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -204,7 +206,7 @@ st.markdown(
                     </div>
                     <div class="text-center">
                         <h5 class="fw-bold">Sampah konsumsi</h5>
-                        <p>
+                        <p class="col-lg-8 offset-lg-2">
                             sampah ini berasal dari sisa konsumsi manusia. Contohnya adalah sampah rumah tangga seperti sisa makanan, kemasan plastik atau barang barang rumah tangga
                         </p>
                     </div>
@@ -215,7 +217,7 @@ st.markdown(
                     </div>
                     <div class="text-center">
                         <h5 class="fw-bold">Sampah Industri</h5>
-                        <p>
+                        <p class="col-lg-8 offset-lg-2">
                             Sampah ini berasal dari kegiatan industri atau manufaktur. Contohnya sisa pangan hasil olahan, sampah industri kima dan bahan cairan kimia seperti oli, pelumas, minyak dan sampah elektronik.
                         </p>
                     </div>
@@ -226,7 +228,7 @@ st.markdown(
                     </div>
                     <div class="text-center">
                         <h5 class="fw-bold">Sampah Manusia</h5>
-                        <p>
+                        <p class="col-lg-8 offset-lg-2">
                             sampah ini bersumber dari manusia atau yang disebut human waste. Contohnya seperti urin dan feses. Sampah dari sumber ini dapat membahayakan kesehatan jika dibuang sembarangan.
                         </p>
                     </div>
@@ -248,7 +250,7 @@ with open("images/dampak.jpg", "rb") as image_file:
 st.markdown(f"""
     <div class="container-fluid">
     <h2 class="py-5 text-center">Dampak Negatif Sampah</h2>
-    <div class="container col-lg-8">
+    <div class="container col-lg-10">
             <div>
                 <div class="image-wrapper mb-5">
                     <img src="data:image/jpeg;base64,{encoded_alam}" class="contoh">

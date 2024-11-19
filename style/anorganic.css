@@ -44,6 +44,8 @@ footer {visibility: hidden;}
     font-size: 50px;
 }
 
-.p-organik{
+.p-anorganik{
     text-align: justify;
+    font-size: 16px;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
 }

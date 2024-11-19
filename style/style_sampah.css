@@ -33,6 +33,8 @@ footer {visibility: hidden;}
 
 .pengetian-sampah{
     text-align: justify;
+    font-size: 16px;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
 }
 
 .dampak{
@@ -48,4 +50,17 @@ footer {visibility: hidden;}
 .image-wrapper img{
     width: 300px;
     border-radius: 10px;
+}
+
+.gambar {
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Memusatkan secara horizontal */
+    align-items: center; /* Memusatkan secara vertikal */
+    height: 250px; /* Menentukan tinggi container sesuai kebutuhan */
+}
+
+.gambar img {
+    width: 250px; /* Menentukan lebar gambar */
+    max-width: 100%; /* Agar gambar tetap responsif */
+    height: auto; /* Menjaga rasio gambar */
 }
