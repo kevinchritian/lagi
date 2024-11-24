@@ -39,6 +39,7 @@ AI = st.Page(
     title = "AI",
 )
 
+
 pg = st.navigation(
     {
     "Info" : [home,about],

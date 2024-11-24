@@ -1,5 +1,10 @@
 /* Untuk CSS Banner */
 
+.banner {
+    height: 80vh;
+    /* background-color: blue; */
+}
+
 .judul1{
     font-size: 39.9968px;
     font-weight: 700;

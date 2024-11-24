@@ -9,6 +9,18 @@ import io
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 st.set_page_config(layout='wide')
 
+
+hide_streamlit_style = """
+<style>
+    #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-left:0rem; padding-right:0rem; padding-bottom:0rem;}
+</style>
+"""
+
+# Memasukkan CSS custom ke dalam aplikasi
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
+
 # Fungsi untuk mengonversi gambar ke format Base64
 def convert_image_to_base64(image):
     buffered = io.BytesIO()
@@ -85,7 +97,7 @@ with open("images/judul.png", "rb") as image_file:
 
 # Menyisipkan gambar Base64 ke dalam tag <img>
 st.markdown(f"""
-<div class="container-fluid banner try">
+<div class="container-fluid">
     <div class="container banner-content">
             <div>
                 <div class="gambar justify-content-center text-center">
@@ -177,6 +189,22 @@ st.markdown(f"""
     </div> 
 """, unsafe_allow_html=True)
 
+
+# Suryamatjan RAPI BANK SAMPAH
+st.markdown(f"""
+<style>
+    .try {{
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{image_base65}');
+        background-reapat: no-reapet;
+        background-size: cover;
+        background-position:center;
+    }}
+</style>
+<div class="container-fluid banner try">
+    <div class="container banner-content">
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 
 # masukan dan Saran
