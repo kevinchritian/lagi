@@ -9,6 +9,14 @@ st.set_page_config(layout='wide')
 with open("style/anorganic.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+hide_streamlit_style = """
+<style>
+    #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-left:0rem; padding-right:0rem; padding-bottom:0rem;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 # Menyisipkan link Bootstrap 5 ke dalam aplikasi Streamlit
 st.markdown("""
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -22,8 +30,7 @@ with open("images/sampah-2.jpg", "rb") as image_file:
 st.markdown(f"""
 <style>
     .try {{
-        background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0.5) 20%,rgba(0, 0, 0, 0.7) 50%,rgba(255, 255, 255, 0.5) 80%,white), 
-url('data:image/jpg;base64,{encoded_banner}');
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{encoded_banner}');
         background-reapat: no-reapet;
         background-size: cover;
         background-position:center;
@@ -44,7 +51,7 @@ url('data:image/jpg;base64,{encoded_banner}');
 
 st.markdown("""
     <div class="container-fluid py-5">
-        <div class="container col-lg-9">
+        <div class="container col-lg-8">
             <p class="p-anorganik">
                 Sampah anorganik adalah jenis sampah yang berasal dari bahan non-biologis atau hasil olahan bahan sintetik tertentu. Materialnya tidak berasal dari alam, sehingga tidak mudah terurai secara alami (undegradable) dan membutuhkan waktu yang sangat lama untuk terdekomposisi di lingkungan. Sampah ini umumnya dihasilkan dari aktivitas manusia, terutama dari penggunaan bahan sintetis atau produk olahan.
             </p>
@@ -74,13 +81,13 @@ with open("images/plastik.png", "rb") as image_file:
 
 st.markdown(
     f"""
-    <div class="container-fluid">
-        <div class="container pb-5">
+    <div class="container-fluid contoh-anorganik">
+        <div class="container py-5">
             <div class="text-center">
-                <h1>
+                <h2>
                     Contoh Sampah Anorganik
-                </h1>
-                <h2 class="text-center">5 Jenis sampah Anorganik berdasarkan sumbernya</h2>
+                </h2>
+                <h3 class="text-center">5 Jenis sampah Anorganik berdasarkan sumbernya</h3>
             </div>
             <div class="row">
                 <div class="col-lg-4">
@@ -159,11 +166,12 @@ with open("images/reuse.jpg", "rb") as image_file:
 st.markdown(f"""
     <div class="container-fluid konten">
         <h2 class="text-center project pt-5 mb-5">Cara Mengolah Sampah Anorganik</h2>
-        <div class="container pb-5">
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="card mb-5 equal-card shadow">
-                        <div class="text-center mt-3">
-                            <img src="data:image/jpeg;base64,{encoded_organik1}" class="mengelola">
+        <div class="container pb-5 col-md-9">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="card mb-5 equal-card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{encoded_organik1}">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Bank Sampah</h5>
@@ -171,10 +179,10 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 offset-lg-3">
-                    <div class="card mb-5 equal-card shadow">
-                        <div class="text-center mt-3">
-                            <img src="data:image/jpeg;base64,{encoded_organik2}" class="mengelola">
+                <div class="col-lg-6">
+                    <div class="card mb-5 equal-card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{encoded_organik2}">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Reduce, Reuse, dan Recycle</h5>
@@ -184,6 +192,7 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div> 
 """, unsafe_allow_html=True)

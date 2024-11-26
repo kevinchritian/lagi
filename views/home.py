@@ -15,8 +15,6 @@ hide_streamlit_style = """
     #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-left:0rem; padding-right:0rem; padding-bottom:0rem;}
 </style>
 """
-
-# Memasukkan CSS custom ke dalam aplikasi
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
@@ -58,7 +56,7 @@ image = Image.open('images/anorganik.png')
 image_base64 = convert_image_to_base64(image)
 
 images_banner = Image.open('images/sampah.jpg')
-image_base65 = convert_image_to_base64(images_banner)
+banner = convert_image_to_base64(images_banner)
 
 
 images_organik = Image.open('images/organik.jpg')
@@ -97,13 +95,21 @@ with open("images/judul.png", "rb") as image_file:
 
 # Menyisipkan gambar Base64 ke dalam tag <img>
 st.markdown(f"""
-<div class="container-fluid">
+<style>
+    .try-banner {{
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{banner}');
+        background-reapat: no-reapet;
+        background-size: cover;
+        background-position:center;
+    }}
+</style>
+<div class="container-fluid try-banner banner">
     <div class="container banner-content">
             <div>
                 <div class="gambar justify-content-center text-center">
                     <img src="data:image/jpeg;base64,{encoded_string}" alt="AI Image">
                 </div>
-                <div class="justify-content-center text-center">
+                <div class="justify-content-center text-center ">
                     <img src="data:image/jpeg;base64,{encoded_judul}" alt="AI Image">
                 </div>
             </div>
@@ -111,12 +117,14 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
 
+
+
 # About
 # st.markdown("<h1 style='text-align: center;'>Tentang Kami</h1>", unsafe_allow_html=True)
 st.markdown("""
-    <div class="container-fluid">
-        <h2 class="pt-5 mb-5" style='text-align: center;'>Tentang Kami</h2>
-        <div class="container pb-5">
+    <div class="container-fluid py-5">
+        <h2 class="mb-5" style='text-align: center;'>Tentang Kami</h2>
+        <div class="container col-lg-8">
             <div>
                 <p class="mb-4 about-txt">
                     NatureAIClassify adalah aplikasi berbasis kecerdasan buatan yang membantu masyarakat dalam 
@@ -140,47 +148,49 @@ st.markdown("""
 
 # Project
 st.markdown(f"""
-    <div class="container-fluid konten">
-        <h2 class="text-center project pt-5 mb-5">Konten Web</h2>
-        <div class="container pb-5 col-lg-8">
+    <div class="container-fluid konten project-bg py-5">
+        <h2 class="text-center project mb-5">Konten Web</h2>
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 mb-4 col-sm-6">
-                    <div class="card shadow mb-4">
+                <div class="col-lg-3 col-md-6 mb-4 col-sm-6">
+                    <div class="card shadow mb-4 h-100">
                         <img src="data:image/jpeg;base64,{image_base68}" class="card-img-top">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">Sampah</h5>
                             <p class="card-text">Pengertian, jenis jenis, dan dampak sampah</p>
-                            <a href="/sampah" target="_self"><button class="button-card float-end">Lihat >></button></a>
+                            <a href="/sampah" target="_self" class="mt-auto">
+                                <button class="button-card float-end">Lihat >></button>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4 col-sm-6">
-                    <div class="card shadow mb-4">
-                        <img src="data:image/jpeg;base64,{image_base67}" class="card-img-top" alt="Deskripsi gambar AI">
-                        <div class="card-body">
+                <div class="col-lg-3 col-md-6 mb-4 col-sm-6">
+                    <div class="card shadow mb-4 h-100">
+                        <img src="data:image/jpeg;base64,{image_base67}" class="card-img-top">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">AI</h5>
                             <p class="card-text">Klasifikasi AI pada gambar sampah organik atau anorganik</p>
-                            <a href="/AI" target="_self"><button class="button-card float-end">Lihat >></button></a>
+                            <a href="/AI" target="_self" class="mt-auto"><button class="button-card float-end">Lihat >></button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 mb-4">
-                    <div class="card shadow mb-4">
+                <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
+                    <div class="card shadow mb-4 h-100">
                         <img src="data:image/jpeg;base64,{image_base66}" class="card-img-top" alt="Deskripsi gambar AI">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">Sampah Organik</h5>
                             <p class="card-text">Pengertian sampah organik dan langkah mengolahnya</p>
-                            <a href="/organik" target="_self"><button class="button-card float-end">Lihat >></button></a>
+                            <a href="/organik" target="_self" class="mt-auto"><button class="button-card float-end mt-auto">Lihat >></button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 mb-4 col-sm-6">
-                    <div class="card shadow">
+                <div class="col-lg-3 col-md-6 mb-4 col-sm-6">
+                    <div class="card shadow h-100">
                         <img src="data:image/jpeg;base64,{image_base64}" class="card-img-top" alt="Deskripsi gambar AI">
-                        <div class="card-body">
+                        <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">Sampah Anorganik</h5>
                             <p class="card-text">Pengertian sampah anorganik dan langkah mengolahnya</p>
-                            <a href="/anorganik" target="_self"><button class="button-card float-end">Lihat >></button></a>
+                            <a href="/anorganik" target="_self" class="mt-auto"><button class="button-card float-end mt-auto">Lihat >></button></a>
                         </div>
                     </div>
                 </div>
@@ -191,18 +201,33 @@ st.markdown(f"""
 
 
 # Suryamatjan RAPI BANK SAMPAH
+with open("images/suryatmajan.jpg", "rb") as image_file:
+    suryatmajan = base64.b64encode(image_file.read()).decode()
+
 st.markdown(f"""
 <style>
     .try {{
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{image_base65}');
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{suryatmajan}');
         background-reapat: no-reapet;
         background-size: cover;
         background-position:center;
     }}
 </style>
-<div class="container-fluid banner try">
-    <div class="container banner-content">
+<div class="container-fluid try">
+    <h2 class="text-center text-light pt-5">RAPI BANK SAMPAH</h2>
+    <div class="container col-lg-8 mt-5 banner-suryatmajan">
+        <p class='text-light suryatmajan mb-5'>
+                "RAPI" BANK SAMPAH berlokasi di Kampung Gemblakan Bawah RW 09, Kelurahan Suryatmajan, Kemantren Danurejan, Yogyakarta. 
+                Kehadirannya dilatarbelakangi oleh keresahan terhadap sistem pembuangan sampah yang masih menggunakan metode angkut-buang, 
+                yang hanya memindahkan sampah dari sumbernya ke lokasi lain tanpa mengurangi volumenya. Akibatnya, sampah terus menumpuk 
+                tanpa pengelolaan lanjutan. Untuk menjawab permasalahan ini, "RAPI" BANK SAMPAH hadir dengan memberikan solusi pengelolaan 
+                sampah yang lebih efektif dan dapat diterima oleh masyarakat setempat.
+        </p>
+        <div class="text-center">
+            <a href="/Suryatmajan" target="_self" class="mt-auto"><button class="btn btn-outline-info mb-5">Selengkapnya</button></a>
+        </div>
     </div>
+</div>
 </div>
 """, unsafe_allow_html=True)
 
@@ -212,7 +237,7 @@ st.markdown("""
     <div class="container-fluid ">
         <h2 class="text-center pt-5 mb-5">Saran dan Masukan</h2>
         <div class='container message pb-5'>
-                    <form action="https://formsubmit.co/kevinsepoetro@gmail.com" method="POST" class="col-lg-8 offset-lg-2">
+                    <form action="https://formsubmit.co/kevinsepoetro@gmail.com" method="POST" class="col-lg-6 offset-lg-3">
                         <input type="hidden" name="_captcha" value="false">
                         <div class="mb-3">            
                             <label class="form-label">Nama</label>

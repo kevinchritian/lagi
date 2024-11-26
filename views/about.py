@@ -9,15 +9,12 @@ import io
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 st.set_page_config(layout='wide')
 
-
-# hide_streamlit_style = """
-# <style>
-#     #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-left:0rem; padding-right:0rem; padding-bottom:0rem;}
-# </style>
-# """
-
-# # Memasukkan CSS custom ke dalam aplikasi
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = """
+<style>
+    #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-left:0rem; padding-right:0rem; padding-bottom:0rem;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 def convert_image_to_base64(image):
@@ -66,8 +63,7 @@ with open("images/logo.png", "rb") as image_file:
 st.markdown(f"""
 <style>
     .try {{
-        background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0.5) 20%,rgba(0, 0, 0, 0.7) 50%,rgba(255, 255, 255, 0.5) 80%,white), 
-url('data:image/jpg;base64,{image_base65}');
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{image_base65}');
         background-reapat: no-reapet;
         background-size: cover;
         background-position:center;
@@ -92,11 +88,10 @@ image_base77 = convert_image_to_base64(images_logo)
 
 st.markdown(f"""
     <div class="container-fluid">
-        <h2 class="pt-5 text-center">Latar Belakang</h2>
-        <hr class="mb-5 custom-hr">
+        <h2 class="pt-5 text-center mb-5">Latar Belakang</h2>
             <div class="container col-md-9">     
                 <div>
-                    <div class="logo mb-4">
+                    <div class="logo mb-5">
                         <img src="data:image/jpeg;base64,{image_base77}">
                     </div>
                     <p class="latar-belakang-txt">
@@ -145,8 +140,7 @@ image_base72 = convert_image_to_base64(images_AI)
 
 st.markdown(f"""
     <div class="container-fluid tujuan py-5">
-        <h2 class="text-center">Tujuan</h2>
-        <hr class="mb-5 custom-hr">
+        <h2 class="text-center mb-5">Tujuan</h2>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -242,8 +236,7 @@ image_base76 = convert_image_to_base64(images_manfaat4)
 
 st.markdown(f"""
     <div class="container-fluid py-5">
-        <h2 class="text-center">Manfaat</h2>
-        <hr class="mb-5 custom-hr">
+        <h2 class="text-center mb-5">Manfaat</h2>
         <div class="container col-10">
             <div class="row">
                 <div class="col-lg-6 col-md-6">

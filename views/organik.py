@@ -1,11 +1,18 @@
 import streamlit as st
-import streamlit as st
 from PIL import Image
 import base64
 import io
 
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 st.set_page_config(layout='wide')
+
+hide_streamlit_style = """
+<style>
+    #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-left:0rem; padding-right:0rem; padding-bottom:0rem;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 with open("style/organik.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
@@ -19,11 +26,11 @@ with open("images/banner-organik.jpg", "rb") as image_file:
     encoded_banner = base64.b64encode(image_file.read()).decode()
 
 
+
 st.markdown(f"""
 <style>
     .try {{
-        background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0.5) 20%,rgba(0, 0, 0, 0.7) 50%,rgba(255, 255, 255, 0.5) 80%,white), 
-url('data:image/jpg;base64,{encoded_banner}');
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{encoded_banner}');
         background-reapat: no-reapet;
         background-size: cover;
         background-position:center;
@@ -44,7 +51,7 @@ url('data:image/jpg;base64,{encoded_banner}');
 
 st.markdown("""
     <div class="container-fluid py-5">
-        <div class="container col-lg-9">
+        <div class="container col-lg-8">
             <p class="p-organik">
                 Sampah Organik adalah sampah yang dapat terurai secara alamiah di alam. Sampah Organik biasanya berasal 
                 dari sisa sisa mahkluk hidup, seperti hewan, tanaman, maupun manusia. Sampah organik juga bisa disebut 
@@ -60,7 +67,7 @@ st.markdown("""
 
 
 
-# Conoth anorganik
+# Contoh anorganik
 with open("images/organik.png", "rb") as image_file:
     encoded_judul = base64.b64encode(image_file.read()).decode()
 
@@ -80,13 +87,14 @@ with open("images/manusia.png", "rb") as image_file:
 
 st.markdown(
     f"""
-    <div class="container-fluid">
+    <div class="container-fluid contoh-organik">
         <div class="container pb-5">
             <div class="text-center">
-                <h1>
+                <h2 class="pt-5">
                     Contoh Sampah Organik
-                </h1>
-                <h2 class="text-center">5 Jenis sampah organik berdasarkan sumbernya</h2>
+                </h2>
+                <hr class="custom-hr mb-5">
+                <h3 class="text-center">5 Jenis sampah organik berdasarkan sumbernya</h3>
             </div>
             <div class="row">
                 <div class="col-lg-4">
@@ -125,25 +133,25 @@ st.markdown(
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <img src="data:image/jpeg;base64,{encoded_hewan}" class="contoh">
                     </div>
                     <div class="text-center">
                         <h5 class="fw-bold">Sampah Sisa Hewan Ternak</h5>
-                        <p>
+                        <p class="col-lg-8 offset-lg-2">
                             Sampah dari hewan ternak, seperti kotoran sapi dan kambing termasuk kedalam kategori sampah jenis organik. Sampah ini
                             biasanya juga akan dipakai untuk dijadikan pupuk atau biogas sebagai bahan bakar.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <img src="data:image/jpeg;base64,{encoded_manusia}" class="contoh">
                     </div>
                     <div class="text-center">
                         <h5 class="fw-bold">Sampah dari Bagian Tubuh</h5>
-                        <p>
+                        <p class="col-lg-8 offset-lg-2">
                             Sampah ini yang dimaksud adalah potongan kuku dan rambut manusia yang rontok. Helai rambut yang rontok dan potongan kuku
                             bisa dijadikan sebagai bahan komposter.
                         </p>
@@ -174,45 +182,14 @@ with open("images/organik4.jpg", "rb") as image_file:
 
 st.markdown(f"""
     <div class="container-fluid konten">
-        <h2 class="text-center project pt-5 mb-5">Cara Mengolah Sampah Organik</h2>
-        <div class="container pb-5 col-lg-8">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="card mb-5 equal-card shadow">
-                        <div class="text-center mt-3">
-                            <img src="data:image/jpeg;base64,{encoded_organik2}" class="mengelola">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Dapat diolah menjadi kompos dan pupuk sederhana</h5>
-                            <p class="card-text isi">Sampah organik dapat diolah menjadi kompos untuk pertanian dengan tahapan yang telaten dan benar. Jika kurang telaten, sampah organik bisa dijadikan pupuk sederhana dengan membuat lubang pembuangan di tanah dan membiarkannya membusuk hingga menyerupai tanah. Unsur hara yang dihasilkan bermanfaat untuk menyuburkan tanaman.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="card mb-5 equal-card shadow">
-                        <div class="text-center mt-3">
-                            <img src="data:image/jpeg;base64,{encoded_organik3}" class="mengelola">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Tambahan Pakan Ternak</h5>
-                            <p class="card-text isi">Dedaunan dari sampah organik dapat dimanfaatkan sebagai pakan ternak seperti kambing dan sapi. Selain itu, sampah organik juga dapat diolah menjadi pelet untuk makanan ayam dan ikan, sehingga berguna untuk kebutuhan peternakan.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="card mb-5 equal-card shadow">
-                        <div class="text-center mt-3">
-                            <img src="data:image/jpeg;base64,{encoded_organik1}" class="mengelola">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Kerajinan Tangan</h5>
-                            <p class="card-text isi">Sampah organik seperti enceng gondok yang dikeringkan dan dibakar dapat diolah menjadi tas dan barang bernilai jual. Batok kelapa, selain digunakan sebagai bahan bakar, juga bisa dijadikan produk seperti centong, cangkir, atau peralatan masak lainnya.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="card mb-5 equal-card shadow">
-                        <div class="text-center mt-3">
-                            <img src="data:image/jpeg;base64,{encoded_organik4}" class="mengelola">
+        <h2 class="text-center project pt-5">Cara Mengolah Sampah Organik</h2>
+        <hr class="mb-5 custom-hr">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-lg-4 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{encoded_organik4}" class="card-img-top">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Biogas dan Listrik</h5>
@@ -220,6 +197,44 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{encoded_organik3}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Tambahan Pakan Ternak</h5>
+                            <p class="card-text isi">Dedaunan dari sampah organik dapat dimanfaatkan sebagai pakan ternak seperti kambing dan sapi. Selain itu, sampah organik juga dapat diolah menjadi pelet untuk makanan ayam dan ikan, sehingga berguna untuk kebutuhan peternakan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{encoded_organik1}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Kerajinan Tangan</h5>
+                            <p class="card-text isi">Sampah organik seperti enceng gondok yang dikeringkan dan dibakar dapat diolah menjadi tas dan barang bernilai jual. Batok kelapa, selain digunakan sebagai bahan bakar, juga bisa dijadikan produk seperti centong, cangkir, atau peralatan masak lainnya.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 d-lg-block d-none">
+                </div>
+                <div class="col-lg-4 mb-5">
+                    <div class="card shadow h-100 ">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{encoded_organik2}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Dapat diolah menjadi kompos dan pupuk sederhana</h5>
+                            <p class="card-text isi">Sampah organik dapat diolah menjadi kompos untuk pertanian dengan tahapan yang telaten dan benar. Jika kurang telaten, sampah organik bisa dijadikan pupuk sederhana dengan membuat lubang pembuangan di tanah dan membiarkannya membusuk hingga menyerupai tanah. Unsur hara yang dihasilkan bermanfaat untuk menyuburkan tanaman.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-5 d-lg-block d-none">
+                </div>
+            </div>
         </div>
     </div> 
 """, unsafe_allow_html=True)

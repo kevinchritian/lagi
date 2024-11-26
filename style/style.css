@@ -13,7 +13,10 @@
 .paragraft1{
     font-size: 16px;
 }
-        
+
+.project-bg{
+    background-color: #f5f5f5;
+}
 
 .project{
     color: black;
@@ -77,7 +80,7 @@ h2::before, h2::after {
     content: '';
     display: inline-block;
     height: 1px;
-    width: 27%; /* Ubah sesuai dengan kebutuhan */
+    width: 20%; /* Ubah sesuai dengan kebutuhan */
     position: relative;
     vertical-align: middle;
 }
@@ -161,3 +164,17 @@ h2::after{
 }
 
 
+.project-bg p{
+    text-align: justify;
+}
+
+
+.suryatmajan{
+    text-align: justify;
+}
+
+/* .banner-suryatmajan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

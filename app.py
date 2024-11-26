@@ -39,11 +39,25 @@ AI = st.Page(
     title = "AI",
 )
 
+Suryatmajan = st.Page(
+    page = "views/Suryatmajan.py",
+    # icon= ":material"
+    title= "Tentang RAPI BANK SAMPAH"
+)
+
+# Sejarah
+
+# Organisasi
+
+# Kegiatan Kerja
+
+
 
 pg = st.navigation(
     {
     "Info" : [home,about],
     "Projects" :[sampah, sampah_organik, sampah_anorganik, AI],
+    'RAPI BANK SAMPAH' :[Suryatmajan]
     }
 )
 

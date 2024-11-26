@@ -1,5 +1,5 @@
 .banner {
-    height: 60vh;
+    height: 80vh;
 }
 
 .banner-content{
@@ -116,4 +116,26 @@ footer {visibility: hidden;}
 }
 .gambar-tujuan img {
     width: 160px; /* Ukuran gambar */
+}
+
+
+h2::before, h2::after {
+    background-color: #17A2B8;
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 20%; /* Ubah sesuai dengan kebutuhan */
+    position: relative;
+    vertical-align: middle;
+}
+
+
+h2::before{
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+h2::after{
+    left: 0.5em;
+    margin-right: -50%;
 }

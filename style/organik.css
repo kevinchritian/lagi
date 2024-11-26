@@ -1,6 +1,9 @@
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 
+.banner{
+    height: 80vh;
+}
 
 .st-emotion-cache-giotri, .e1nzilvr2 {
     display: none;
@@ -18,14 +21,15 @@ footer {visibility: hidden;}
     width: 250px;
 }
 
-.mengelola{
-    width: 300px;
+.custom-hr {
+    border: 2px solid #17A2B8; /* Menambahkan garis solid dengan ketebalan 3px dan warna biru */
+    color: #17A2B8;
+    margin:7px 331.5;
+    width: 13%; /* Menentukan lebar garis */
+    margin: 0 auto; /* Menempatkan garis di tengah */
+    font-weight: bold;
 }
 
-
-.banner {
-    height: 60vh;
-}
 
 .banner-content {
     display: flex; /* Mengaktifkan Flexbox */
@@ -48,4 +52,8 @@ footer {visibility: hidden;}
     text-align: justify;
     font-family: Open Sans, Helvetica, Arial, sans-serif;
     font-size: 16px;
+}
+
+.contoh-organik{
+    background-color: #f5f5f5;
 }

@@ -13,6 +13,14 @@ with open("style/style_sampah.css") as f:
 st.markdown("""
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 """, unsafe_allow_html=True)
+
+
+hide_streamlit_style = """
+<style>
+    #root > div:nth-child(1) > div > div > div > div > section > div {padding-top: 0rem; padding-left:0rem; padding-right:0rem; padding-bottom:0rem;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------#
 
 
@@ -23,8 +31,7 @@ with open("images/sampah.jpg", "rb") as image_file:
 st.markdown(f"""
 <style>
     .try {{
-        background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0.5) 20%,rgba(0, 0, 0, 0.7) 50%,rgba(255, 255, 255, 0.5) 80%,white), 
-url('data:image/jpg;base64,{encoded_banner}');
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('data:image/jpg;base64,{encoded_banner}');
         background-reapat: no-reapet;
         background-size: cover;
         background-position:center;
@@ -48,7 +55,7 @@ st.markdown("""
     <div class="container-fluid pt-5">
         <div class="container col-lg-9">
                 <div class="">
-                    <p class="pengetian-sampah">
+                    <p class="pengetian-sampah mb-5">
                     	Menurut UU Nomor 8 Tahun 2008 tentang Pengelolaan Sampah, sampah adalah sisa kegiatan sehari-hari manusia atau proses 
                         alam yan berbentuk padat atau semi padat, berupa zat organik dan anorganik, dan bersifat dapat terurai atau tidak dapat terurai, 
                         yang dianggap sudah tidak berguna lagi dan dibuang ke lingkungan. Menurut World Health Organization (WHO), 
@@ -60,7 +67,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.write("---")
+
 
 # Jenis jenis sampah
 with open("images/sampah-organik.jpg", "rb") as image_file:
@@ -73,11 +80,12 @@ with open("images/sampah-elektronik.jpg", "rb") as image_file:
     encoded_elektronik = base64.b64encode(image_file.read()).decode()
 
 st.markdown(f"""
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-5 jenis">
         <div class="container col-10">
             <h2 class="text-center">Klasifikasi Jenis Sampah</h2>
             <p class="text-center mb-5">Sampah dapat dibedakan menjadi beberapa jenis yaitu berdasarkan sifat, wujudnya, dan sumbernya.</p>
-            <h3 class="text-center mb-3">Berdasarkan Sifat</h3>
+            <h3 class="text-center">Berdasarkan Sifat</h3>
+            <hr class="mb-5 custom-hr">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-5 shadow">
@@ -126,11 +134,12 @@ with open("images/limbah-padat.jpg", "rb") as image_file:
 
 st.markdown(f"""
     <div class="container-fluid pt-5">
-        <div class="container col-lg-8">
-            <h3 class="text-center mb-3">Berdasarkan Wujud</h3>
+        <div class="container col-lg-8 wujud">
+            <h3 class="text-center">Berdasarkan Wujud</h3>
+            <hr class="mb-5 custom-hr">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="card mb-5 shadow">
+                <div class="col-lg-6 mb-5">
+                    <div class="card shadow h-100">
                         <div class="text-center">
                             <img src="data:image/jpeg;base64,{encoded_cair}">
                         </div>
@@ -142,8 +151,8 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card mb-5 shadow">
+                <div class="col-lg-6 mb-5">
+                    <div class="card shadow h-100">
                         <div class="text-center">
                             <img src="data:image/jpeg;base64,{encoded_padat}">
                         </div>
@@ -179,12 +188,13 @@ with open("images/manusia2.png", "rb") as image_file:
 
 st.markdown(
     f"""
-    <div class="container-fluid">
-        <div class="container">
+    <div class="container-fluid sumber">
+        <div class="container py-5">
             <div class="text-center">
-                <h3 class="mt-5 mb-3">
+                <h3 class="mt-5">
                     Berdasarkan Sumbernya
                 </h3>
+                <hr class="mb-5 custom-hr">
             </div>
             <div class="row">
                 <div class="col-lg-6">
@@ -240,7 +250,6 @@ st.markdown(
 )
 
 
-st.write("---")
 
 # Dampak
 
@@ -248,9 +257,9 @@ with open("images/dampak.jpg", "rb") as image_file:
     encoded_alam = base64.b64encode(image_file.read()).decode()
 
 st.markdown(f"""
-    <div class="container-fluid">
+    <div class="container-fluid pb-5">
     <h2 class="py-5 text-center">Dampak Negatif Sampah</h2>
-    <div class="container col-lg-10">
+    <div class="container col-lg-8">
             <div>
                 <div class="image-wrapper mb-5">
                     <img src="data:image/jpeg;base64,{encoded_alam}" class="contoh">
