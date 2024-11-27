@@ -51,24 +51,11 @@ footer {visibility: hidden;}
     background-color: #f5f5f5;
 }
 
-
-h2::before, h2::after {
-    background-color: #17A2B8;
-    content: '';
-    display: inline-block;
-    height: 1px;
-    width: 20%; /* Ubah sesuai dengan kebutuhan */
-    position: relative;
-    vertical-align: middle;
-}
-
-
-h2::before{
-    right: 0.5em;
-    margin-left: -50%;
-}
-
-h2::after{
-    left: 0.5em;
-    margin-right: -50%;
+.custom-hr {
+    border: 2px solid #17A2B8; /* Menambahkan garis solid dengan ketebalan 3px dan warna biru */
+    color: #17A2B8;
+    margin:7px 331.5;
+    width: 13%; /* Menentukan lebar garis */
+    margin: 0 auto; /* Menempatkan garis di tengah */
+    font-weight: bold;
 }

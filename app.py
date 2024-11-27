@@ -42,22 +42,38 @@ AI = st.Page(
 Suryatmajan = st.Page(
     page = "views/Suryatmajan.py",
     # icon= ":material"
-    title= "Tentang RAPI BANK SAMPAH"
+    title= "Tentang RAPI Bank Sampah"
 )
 
-# Sejarah
+# Gambaran Umum
+Umum = st.Page(
+    page="views/Umum.py",
+    title="Gambaran Umum RAPI Bank Sampah"
+)
 
 # Organisasi
+Organisasi= st.Page(
+    page="views/Organisasi.py",
+    title="Organisasi RAPI Bank Sampah"
+)
 
 # Kegiatan Kerja
+Kegiatan= st.Page(
+    page="views/Kegiatan.py",
+    title= "Kegiatan Kerja RAPI Bank Sampah"
+)
 
+Pengolahan = st.Page(
+    page="views/Pengolahan.py",
+    title= "Penanganan Sampah Organik dan Anorganik"
+)
 
 
 pg = st.navigation(
     {
     "Info" : [home,about],
     "Projects" :[sampah, sampah_organik, sampah_anorganik, AI],
-    'RAPI BANK SAMPAH' :[Suryatmajan]
+    'RAPI BANK SAMPAH' :[Suryatmajan, Organisasi, Umum, Kegiatan, Pengolahan]
     }
 )
 

@@ -1,0 +1,42 @@
+.banner{
+    height: 80vh;
+}
+
+.banner-content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+
+.st-emotion-cache-giotri, .e1nzilvr2 {
+    display: none;
+}
+
+.st-emotion-cache-b5hcvb.e1vs0wn31 {
+    display: none;
+}
+
+.anorganik{
+    text-align: justify;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+}
+
+.gbr{
+    font-size: 16px;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.bg{
+    background-color: #f5f5f5;
+}
+
+.judul1{
+    font-weight: bold;
+    color: #77BF4A;
+}

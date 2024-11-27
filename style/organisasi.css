@@ -1,0 +1,102 @@
+.banner{
+    height: 80vh;
+}
+
+.warna{
+    color: #0DCAF0;
+}
+
+.warna h1{
+    font-weight: bold;
+}
+
+.try-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+
+
+.st-emotion-cache-giotri, .e1nzilvr2 {
+    display: none;
+}
+
+.st-emotion-cache-b5hcvb.e1vs0wn31 {
+    display: none;
+}
+
+
+/* .profile-area{
+    padding: 80px 0;
+} */
+
+.card{
+    box-shadow : 0 0 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-radius:15px ;
+}
+
+.img1 img{
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.img2 img{
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid  #fff;
+    margin-top: -80px;
+}
+
+.card:hover .img2 img{
+    border-color: darkcyan;
+    transition: .7s;
+}
+
+.main-text{
+    padding: 30px 0;
+    text-align: center;
+}
+
+.main-text h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.main-text p{
+    font-size: 16px;
+    padding: 0 35px;
+}
+
+.main-text p{
+    font-size: 16px;
+    padding: 0 35px;
+}
+
+.color{
+    background-color: #f5f5f5;
+}
+
+
+.custom-hr {
+    border: 2px solid #17A2B8; /* Menambahkan garis solid dengan ketebalan 3px dan warna biru */
+    color: #17A2B8;
+    margin:7px 331.5;
+    width: 13%; /* Menentukan lebar garis */
+    margin: 0 auto; /* Menempatkan garis di tengah */
+    font-weight: bold;
+}

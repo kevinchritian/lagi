@@ -87,6 +87,7 @@ st.markdown(
                 <h2>
                     Contoh Sampah Anorganik
                 </h2>
+                <hr class="custom-hr mb-5">
                 <h3 class="text-center">5 Jenis sampah Anorganik berdasarkan sumbernya</h3>
             </div>
             <div class="row">
@@ -123,24 +124,26 @@ st.markdown(
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <img src="data:image/jpeg;base64,{encoded_kaca}" class="contoh">
                     </div>
                     <div class="text-center">
                         <h5 class="fw-bold">Sampah Kaca</h5>
-                        <p>
+                        <p class="col-lg-8 offset-lg-2">
                             Kaca adalah material anorganik yang dibuat dari silika atau pasir dengan sifat keras dan sulit terurai. Contoh sampah kaca mencakup botol minuman, gelas, kaca jendela, dan pecahan piring.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <div class="text-center">
                         <img src="data:image/jpeg;base64,{encoded_karet}" class="contoh">
                     </div>
                     <div class="text-center">
                         <h5 class="fw-bold">Sampah Karet</h5>
-                        <p>
+                        <p class="col-lg-8 offset-lg-2">
                             Sampah karet terdiri dari material yang berasal dari getah pohon karet atau bahan sintetis. Contohnya meliputi ban bekas, sandal yang rusak, sepatu bekas, dan lainnya.
                         </p>
                     </div>
@@ -165,11 +168,12 @@ with open("images/reuse.jpg", "rb") as image_file:
 
 st.markdown(f"""
     <div class="container-fluid konten">
-        <h2 class="text-center project pt-5 mb-5">Cara Mengolah Sampah Anorganik</h2>
+        <h2 class="text-center project pt-5">Cara Mengolah Sampah Anorganik</h2>
+        <hr class="custom-hr mb-5">
         <div class="container pb-5 col-md-9">
             <div class="row">
                 <div class="col-lg-6 mb-5">
-                    <div class="card mb-5 equal-card shadow h-100">
+                    <div class="card equal-card shadow h-100">
                         <div class="text-center">
                             <img src="data:image/jpeg;base64,{encoded_organik1}">
                         </div>
@@ -179,8 +183,8 @@ st.markdown(f"""
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="card mb-5 equal-card shadow h-100">
+                <div class="col-lg-6 mb-5">
+                    <div class="card  equal-card shadow h-100">
                         <div class="text-center">
                             <img src="data:image/jpeg;base64,{encoded_organik2}">
                         </div>

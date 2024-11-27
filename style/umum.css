@@ -2,26 +2,18 @@
     height: 80vh;
 }
 
-.gambar-banner img{
-    width: 170px;
-    height: auto;
-}
-
 .banner-content{
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
-.judul1{
-    color: #77BF4A;
+.geografis{
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    text-align: justify;
+    text-indent: 50px;
 }
-
-.banner h1{
-    font-weight: bold;
-}
-
 
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
@@ -35,42 +27,30 @@ footer {visibility: hidden;}
     display: none;
 }
 
-.latarbelakang p{
-    text-align: justify;
-    font-family: Open Sans, Helvetica, Arial, sans-serif;
-    text-indent: 50px;
-}
-
 .bg{
     background-color: #f5f5f5;
 }
 
-.tujuan{
+.sejarah{
     text-align: justify;
-    font-family: Open Sans, Helvetica, Arial, sans-serif;
     text-indent: 50px;
-}
-
-
-.manfaat{
-    text-align: justify;
     font-family: Open Sans, Helvetica, Arial, sans-serif;
-    text-indent: 50px;
 }
 
-.gambar{
-    border-radius: 50px;
-    width: 300px;
-    height: auto;
-    border: solid #17A2B8;
+.visi{
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
 }
 
-.row-tujuan{
+.mision img{
+    border-radius: 100%;
+    width: 400px;
+}
+
+.mision{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 
 h2::before, h2::after {
     background-color: #17A2B8;
@@ -82,6 +62,7 @@ h2::before, h2::after {
     vertical-align: middle;
 }
 
+
 h2::before{
     right: 0.5em;
     margin-left: -50%;
@@ -90,4 +71,9 @@ h2::before{
 h2::after{
     left: 0.5em;
     margin-right: -50%;
+}
+
+.judul1{
+    font-weight: bold;
+    color: #77BF4A;
 }

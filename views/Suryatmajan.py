@@ -36,6 +36,18 @@ with open("images/tujuan.jpg", "rb") as image_file:
 with open("images/benefit.jpg", "rb") as image_file:
     manfaat = base64.b64encode(image_file.read()).decode()
 
+with open("images/sampahOR.jpg", "rb") as image_file:
+    sampah = base64.b64encode(image_file.read()).decode()
+
+with open("images/vision.jpg", "rb") as image_file:
+    visi = base64.b64encode(image_file.read()).decode()
+
+with open("images/RapiBANK.jpg", "rb") as image_file:
+    bank = base64.b64encode(image_file.read()).decode()
+
+with open("images/Organisasi.png", "rb") as image_file:
+    organisasi = base64.b64encode(image_file.read()).decode()
+
 # -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 st.markdown(f"""
@@ -103,7 +115,7 @@ st.markdown(f"""
     <div class="container-fluid bg py-5">
         <div class="container">
             <h2 class="text-center mb-5">Tujuan</h2>
-            <div class="row">
+            <div class="row row-tujuan">
                 <div class="tujuan col-lg-6">
                     <p>
                         "RAPI" BANK SAMPAH didirikan sebagai wujud apresiasi 
@@ -165,49 +177,57 @@ st.markdown(f"""
         <div class="container">
             <h2 class="text-center mb-5">RAPI Bank Sampah</h2>
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="card shadow mb-4 h-100">
-                        <img src="data:image/jpeg;base64,{manfaat}" class="card-img-top">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Gambaran Umum, Visi, dan Misi</h5>
-                            <p class="card-text">Gambaran umum, visi, dan misi RAPI Bank Sampah</p>
-                            <a href="" target="_self" class="mt-auto">
-                                <button class="btn btn-outline-info float-end">Lihat >></button>
-                            </a>
+                <div class="col-lg-3 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{organisasi}" class="card-img-top">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card shadow mb-4 h-100">
-                        <img src="data:image/jpeg;base64,{manfaat}" class="card-img-top">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body">
                             <h5 class="card-title fw-bold">Organisasi</h5>
-                            <p class="card-text">Organisasi Bank Sampah</p>
-                            <a href="" target="_self" class="mt-auto">
+                            <p class="card-text">Organisasi RAPI Bank Sampah</p>
+                            <a href="/Organisasi" target="_self" class="mt-auto">
+                                <button class=" btn btn-outline-info button-card float-end">Lihat >></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{visi}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Gambaran Umum</h5>
+                            <p class="card-text">Geografis, visi, dan misi RAPI Bank Sampah</p>
+                            <a href="/Umum" target="_self" class="mt-auto">
                                 <button class="btn btn-outline-info float-end">Lihat >></button>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="card shadow mb-4 h-100">
-                        <img src="data:image/jpeg;base64,{manfaat}" class="card-img-top">
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title fw-bold">Kegiatan Kerja RAPI Bank Sampah</h5>
-                            <p class="card-text">Pengertian, jenis jenis, dan dampak sampah</p>
-                            <a href="" target="_self" class="mt-auto">
-                                <button class="btn btn-outline-info float-end">Lihat >></button>
-                            </a>
+                <div class="col-lg-3 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{sampah}" class="card-img-top">
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card shadow mb-4 h-100">
-                        <img src="data:image/jpeg;base64,{manfaat}" class="card-img-top">
-                        <div class="card-body d-flex flex-column">
+                        <div class="card-body">
                             <h5 class="card-title fw-bold">Pengolahan Anorganik dan Organik</h5>
                             <p class="card-text">Pengolahan sampah organik dan anorganik pada RAPI Bank Sampah</p>
-                            <a href="" target="_self" class="mt-auto">
+                            <a href="/Pengolahan" target="_self" class="mt-auto">
+                                <button class="btn btn-outline-info float-end">Lihat >></button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-5">
+                    <div class="card shadow h-100">
+                        <div class="text-center">
+                            <img src="data:image/jpeg;base64,{bank}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Kegiatan Kerja RAPI Bank Sampah</h5>
+                            <p class="card-text">Kegiatan kerja pada RAPI Bank Sampah</p>
+                            <a href="/Kegiatan" target="_self" class="mt-auto">
                                 <button class="btn btn-outline-info float-end">Lihat >></button>
                             </a>
                         </div>
