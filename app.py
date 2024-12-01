@@ -45,6 +45,12 @@ Suryatmajan = st.Page(
     title= "Tentang RAPI Bank Sampah"
 )
 
+Peta= st.Page(
+    page = "views/Peta.py",
+    # icon= ":material"
+    title= "Jalur Peta Tempat Pembuangan Sampah"
+)
+
 # Gambaran Umum
 Umum = st.Page(
     page="views/Umum.py",
@@ -73,7 +79,7 @@ pg = st.navigation(
     {
     "Info" : [home,about],
     "Projects" :[sampah, sampah_organik, sampah_anorganik, AI],
-    'RAPI BANK SAMPAH' :[Suryatmajan, Organisasi, Umum, Kegiatan, Pengolahan]
+    'RAPI BANK SAMPAH' :[Suryatmajan, Organisasi, Umum, Kegiatan, Pengolahan, Peta]
     }
 )
 

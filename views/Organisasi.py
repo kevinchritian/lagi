@@ -38,8 +38,28 @@ with open("images/pengurus2.png", "rb") as image_file:
 with open("images/pengurus3.png", "rb") as image_file:
     pengurus3 = base64.b64encode(image_file.read()).decode()
 
+
 with open("images/pengurus4.png", "rb") as image_file:
     pengurus4 = base64.b64encode(image_file.read()).decode()
+
+with open("images/bg.jpg", "rb") as image_file:
+    bg1 = base64.b64encode(image_file.read()).decode()
+
+with open("images/bg2.jpg", "rb") as image_file:
+    bg2 = base64.b64encode(image_file.read()).decode()
+
+with open("images/bg3.jpg", "rb") as image_file:
+    bg3 = base64.b64encode(image_file.read()).decode()
+
+with open("images/bg4.jpg", "rb") as image_file:
+    bg4 = base64.b64encode(image_file.read()).decode()
+
+with open("images/bg5.jpg", "rb") as image_file:
+    bg5 = base64.b64encode(image_file.read()).decode()
+
+with open("images/logo2.png", "rb") as image_file:
+    logo = base64.b64encode(image_file.read()).decode()
+
 # -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 st.markdown(f"""
@@ -110,7 +130,7 @@ st.markdown(f"""
         <div class="row">
             <div class="col-lg-4 col-md-6 mb-5">
                 <div class="card">
-                    <div class="img1"><img src="data:image/jpeg;base64,{banner}" alt="Image 1"></div>
+                    <div class="img1"><img src="data:image/jpeg;base64,{bg1}" alt="Image 1"></div>
                     <div class="img2"><img src="data:image/jpeg;base64,{pengurus1}" alt="Image 2"></div>
                     <div class="main-text">
                         <h2>Sujarwati</h2>
@@ -125,7 +145,7 @@ st.markdown(f"""
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
                 <div class="card">
-                    <div class="img1"><img src="data:image/jpeg;base64,{banner}" alt="Image 1"></div>
+                    <div class="img1"><img src="data:image/jpeg;base64,{bg2}" alt="Image 1"></div>
                     <div class="img2"><img src="data:image/jpeg;base64,{pengurus2}" alt="Image 2"></div>
                     <div class="main-text">
                         <h2>lestari</h2>
@@ -140,7 +160,7 @@ st.markdown(f"""
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
                 <div class="card">
-                    <div class="img1"><img src="data:image/jpeg;base64,{banner}" alt="Image 1"></div>
+                    <div class="img1"><img src="data:image/jpeg;base64,{bg3}" alt="Image 1"></div>
                     <div class="img2"><img src="data:image/jpeg;base64,{pengurus3}" alt="Image 2"></div>
                     <div class="main-text">
                         <h2>Desma Tricahyaningrum</h2>
@@ -155,7 +175,7 @@ st.markdown(f"""
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
                 <div class="card">
-                    <div class="img1"><img src="data:image/jpeg;base64,{banner}" alt="Image 1"></div>
+                    <div class="img1"><img src="data:image/jpeg;base64,{bg4}" alt="Image 1"></div>
                     <div class="img2"><img src="data:image/jpeg;base64,{pengurus4}" alt="Image 2"></div>
                     <div class="main-text">
                         <h2>Yuliningsih</h2>
@@ -170,7 +190,7 @@ st.markdown(f"""
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
                 <div class="card">
-                    <div class="img1"><img src="data:image/jpeg;base64,{banner}" alt="Image 1"></div>
+                    <div class="img1"><img src="data:image/jpeg;base64,{bg5}" alt="Image 1"></div>
                     <div class="img2"><img src="data:image/jpeg;base64,{banner}" alt="Image 2"></div>
                     <div class="main-text">
                         <h2>eni kristiani</h2>
