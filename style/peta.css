@@ -38,3 +38,12 @@ footer {visibility: hidden;}
 .bg{
     background-color: #f5f5f5;
 }
+
+.custom-hr {
+    border: 2px solid #17A2B8; /* Menambahkan garis solid dengan ketebalan 3px dan warna biru */
+    color: #17A2B8;
+    margin:7px 331.5;
+    width: 13%; /* Menentukan lebar garis */
+    margin: 0 auto; /* Menempatkan garis di tengah */
+    font-weight: bold;
+}

@@ -55,7 +55,8 @@ st.markdown(f"""
 st.markdown(f"""
 <div class="container-fluid py-5">
     <div class="container">
-        <h2 class="text-center mb-5">Pemetaan dan Jalur Transportasi Pengangkutan Sampah RW 09</h2>
+        <h2 class="text-center">Pemetaan dan Jalur Transportasi Pengangkutan Sampah RW 09</h2>
+        <hr class="mb-5 custom-hr">
     </div>
     <div class= "col-lg-8 offset-lg-2">
         <p class="tulisan">
@@ -76,6 +77,7 @@ st.markdown(
     f"""
 <div class="container-fluid bg py-5">
     <h2 class= "text-center">Peta Jalur Pemetaan dan Transportaisi</h2>
+    <hr class="mb-5 custom-hr">
     <div class="container">
         <div class="text-center">
             <img src="data:image/jpeg;base64,{map}" class="image">
