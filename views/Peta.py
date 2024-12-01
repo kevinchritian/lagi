@@ -76,7 +76,7 @@ st.markdown(f"""
 st.markdown(
     f"""
 <div class="container-fluid bg py-5">
-    <h2 class= "text-center">Peta Jalur Pemetaan dan Transportaisi</h2>
+    <h2 class= "text-center">Peta Jalur Pemetaan dan Transportasi</h2>
     <hr class="mb-5 custom-hr">
     <div class="container">
         <div class="text-center">
