@@ -79,7 +79,8 @@ pg = st.navigation(
     {
     "Info" : [home,about],
     "Projects" :[sampah, sampah_organik, sampah_anorganik, AI],
-    'RAPI BANK SAMPAH' :[Suryatmajan, Organisasi, Umum, Kegiatan, Pengolahan, Peta]
+    'RAPI BANK SAMPAH' :[Suryatmajan, Organisasi, Umum, Kegiatan, Pengolahan],
+    "Peta Suryatmajan" :[Peta]
     }
 )
 
